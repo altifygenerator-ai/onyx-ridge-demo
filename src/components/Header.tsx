@@ -30,25 +30,42 @@ export default function Header() {
           </div>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
-          <Link href="/services">
-  Services
-</Link>
+       <nav className="hidden lg:flex items-center gap-8">
+  <Link
+    href="/services"
+    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
+  >
+    Services
+  </Link>
 
-          <Link
-            href="/about"
-            className="text-sm font-semibold text-white/85 hover:text-[var(--gold)] transition"
-          >
-            About
-          </Link>
+  <Link
+    href="/gallery"
+    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
+  >
+    Gallery
+  </Link>
 
-          <Link
-            href="#contact"
-            className="text-sm font-semibold text-white/85 hover:text-[var(--gold)] transition"
-          >
-            Contact
-          </Link>
-        </nav>
+  <Link
+    href="/promotions"
+    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
+  >
+    Promotions
+  </Link>
+
+  <Link
+    href="/about"
+    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
+  >
+    About
+  </Link>
+
+  <Link
+    href="#contact"
+    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
+  >
+    Contact
+  </Link>
+</nav>
 
         <div className="hidden lg:flex items-center gap-5">
           <a
