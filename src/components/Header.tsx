@@ -2,10 +2,21 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  const links = [
+    { label: "Services", href: "/services" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Promotions", href: "/promotions" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "#contact" },
+  ];
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-black/70 backdrop-blur">
       <div className="container h-[88px] flex items-center justify-between">
@@ -24,54 +35,26 @@ export default function Header() {
               ONYX RIDGE
             </span>
 
-            <span className="block text-[11px] uppercase tracking-[0.18em] text-[var(--gold)] mt-1">
+            <span className="block text-[11px] uppercase tracking-[0.18em] text-[var(--primary)] mt-1">
               Building Solutions
             </span>
           </div>
         </Link>
 
-       <nav className="hidden lg:flex items-center gap-8">
-  <Link
-    href="/services"
-    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
-  >
-    Services
-  </Link>
-
-  <Link
-    href="/gallery"
-    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
-  >
-    Gallery
-  </Link>
-
-  <Link
-    href="/promotions"
-    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
-  >
-    Promotions
-  </Link>
-
-  <Link
-    href="/about"
-    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
-  >
-    About
-  </Link>
-
-  <Link
-    href="#contact"
-    className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
-  >
-    Contact
-  </Link>
-</nav>
+        <nav className="hidden lg:flex items-center gap-8">
+          {links.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="text-sm font-semibold text-white/85 hover:text-[var(--primary)] transition"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
 
         <div className="hidden lg:flex items-center gap-5">
-          <a
-            href="tel:8179482020"
-            className="text-sm font-bold text-white"
-          >
+          <a href="tel:8179482020" className="text-sm font-bold text-white">
             Call/Text 817-948-2020
           </a>
 
@@ -85,10 +68,41 @@ export default function Header() {
           </motion.a>
         </div>
 
-        <button className="lg:hidden text-white">
-          <Menu size={30} />
+        <button
+          onClick={() => setOpen((prev) => !prev)}
+          className="lg:hidden text-white"
+          aria-label="Toggle mobile menu"
+        >
+          {open ? <X size={30} /> : <Menu size={30} />}
         </button>
       </div>
+
+      {open && (
+        <div className="lg:hidden border-t border-white/10 bg-black/95 backdrop-blur">
+          <div className="container py-6">
+            <nav className="grid gap-4">
+              {links.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="rounded-lg border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-bold text-white"
+                >
+                  {link.label}
+                </Link>
+              ))}
+
+              <a
+                href="tel:8179482020"
+                onClick={() => setOpen(false)}
+                className="btn btn-gold mt-2"
+              >
+                Call/Text 817-948-2020
+              </a>
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
