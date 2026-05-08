@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ScrollReveal from "@/components/ScrollReveal";
 import { galleryItems } from "@/data/gallery";
 
 export default function FeaturedWork() {
@@ -9,56 +10,64 @@ export default function FeaturedWork() {
     <section id="projects" className="section section-dark">
       <div className="container">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          <div>
-            <span className="eyebrow">Recent Work</span>
+          <ScrollReveal direction="left">
+            <div>
+              <span className="eyebrow">Recent Work</span>
 
-            <h2 className="max-w-2xl">
-              Real Plumbing And Remodel Work From Onyx Ridge
-            </h2>
+              <h2 className="max-w-2xl">
+                Real Plumbing And Remodel Work From Onyx Ridge
+              </h2>
 
-            <div className="gold-line" />
+              <div className="gold-line" />
 
-            <p className="max-w-2xl text-[var(--muted)]">
-              A look at recent water heater installs, sewer repairs, under-sink
-              plumbing, slab leak work, and remodel plumbing projects.
-            </p>
-          </div>
+              <p className="max-w-2xl text-[var(--muted)]">
+                A look at recent water heater installs, sewer repairs,
+                under-sink plumbing, slab leak work, and remodel plumbing
+                projects.
+              </p>
+            </div>
+          </ScrollReveal>
 
-          <Link href="/gallery" className="btn btn-outline">
-            View Full Gallery
-          </Link>
+          <ScrollReveal direction="right" delay={0.08}>
+            <Link href="/gallery" className="btn btn-outline">
+              View Full Gallery
+            </Link>
+          </ScrollReveal>
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {featured.map((item) => (
-            <div
+          {featured.map((item, index) => (
+            <ScrollReveal
               key={item.title}
-              className="group overflow-hidden rounded-xl border border-[var(--border)] bg-[#0b0d12]"
+              direction="up"
+              delay={index * 0.06}
             >
-              <div className="relative h-[280px] w-full overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                />
+              <div className="group overflow-hidden rounded-xl border border-[var(--border)] bg-[#0b0d12]">
+                <div className="relative h-[280px] w-full overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <span className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--primary)]">
+                    {item.category}
+                  </span>
+
+                  <h3 className="mt-2 text-xl font-black text-white">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm text-[var(--muted)]">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-
-              <div className="p-6">
-                <span className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--primary)]">
-                  {item.category}
-                </span>
-
-                <h3 className="mt-2 text-xl font-black text-white">
-                  {item.title}
-                </h3>
-
-                <p className="mt-3 text-sm text-[var(--muted)]">
-                  {item.description}
-                </p>
-              </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

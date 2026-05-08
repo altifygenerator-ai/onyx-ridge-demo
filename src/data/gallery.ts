@@ -1,11 +1,11 @@
 export const galleryItems = [
   {
-    title: "Crawlspace Plumbing Repair",
-    category: "Under Home Plumbing",
-    image: "/images/gallery/under1.jpg",
-    description:
-      "Plumbing repair work completed under the home with attention to pipe routing and reliable service.",
-  },
+  title: "Tunnel Repairs",
+  category: "Tunnel Repairs",
+  image: "/images/gallery/under1.jpg",
+  description:
+    "Tunnel repair work for under-home plumbing access, pipe repairs, and plumbing service lines.",
+},
   {
     title: "Tankless Water Heater Installation",
     category: "Water Heaters",
@@ -14,12 +14,12 @@ export const galleryItems = [
       "Residential Tankless Water Heater installation with clean connections and dependable setup.",
   },
   {
-    title: "Tankless Water Heater Service",
-    category: "Water Heaters",
-    image: "/images/gallery/waterheaterunder.jpg",
-    description:
-      "Tankless water heater service work completed with careful attention to access and function.",
-  },
+  title: "Reverse Osmosis System",
+  category: "Water Filtration",
+  image: "/images/gallery/waterheaterunder.jpg",
+  description:
+    "Reverse osmosis system installation and plumbing connection work for cleaner drinking water.",
+},
   {
     title: "Framed Wall Water Heater",
     category: "Water Heaters",
@@ -27,13 +27,13 @@ export const galleryItems = [
     description:
       "Water heater installation during framing with clean pipe layout and service-ready placement.",
   },
-  {
-    title: "Exterior Pipe Installation",
-    category: "Exterior Plumbing",
-    image: "/images/gallery/outerpipe.jpg",
-    description:
-      "Exterior plumbing pipe installation completed for durable, long-term use.",
-  },
+{
+  title: "Gas Pipe Installation",
+  category: "Gas Lines",
+  image: "/images/gallery/outerpipe.jpg",
+  description:
+    "Gas pipe installation completed with clean routing, secure fittings, and safety in mind.",
+},
   {
     title: "Under Home Pipe Repair",
     category: "Under Home Plumbing",
