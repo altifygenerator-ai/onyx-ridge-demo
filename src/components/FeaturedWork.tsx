@@ -23,7 +23,7 @@ export default function FeaturedWork() {
               <p className="max-w-2xl text-[var(--muted)]">
                 A look at recent water heater installs, sewer repairs,
                 under-sink plumbing, slab leak work, and remodel plumbing
-                projects.
+                projects completed across the DFW area.
               </p>
             </div>
           </ScrollReveal>
@@ -42,23 +42,25 @@ export default function FeaturedWork() {
               direction="up"
               delay={index * 0.06}
             >
-              <div className="group overflow-hidden rounded-xl border border-[var(--border)] bg-[#0b0d12]">
+              <div className="group overflow-hidden rounded-2xl border border-[var(--border)] bg-[#0b0d12] shadow-xl transition duration-300 hover:-translate-y-1 hover:border-[var(--primary)]/50 hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
                 <div className="relative h-[280px] w-full overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition duration-500 group-hover:scale-105"
+                    className="object-cover transition duration-700 group-hover:scale-110 group-hover:brightness-110"
                   />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80 transition duration-300 group-hover:opacity-60" />
                 </div>
 
                 <div className="p-6">
-                  <span className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--primary)]">
+                  <span className="inline-flex rounded-full border border-[var(--border)] bg-[var(--primary)]/10 px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-[var(--primary)]">
                     {item.category}
                   </span>
 
-                  <h3 className="mt-2 text-xl font-black text-white">
+                  <h3 className="mt-4 text-xl font-black text-white">
                     {item.title}
                   </h3>
 
