@@ -21,7 +21,7 @@ export const galleryItems = [
     "Reverse osmosis system installation and plumbing connection work for cleaner drinking water.",
 },
   {
-    title: "Framed Wall Water Heater",
+    title: "Water Heater Installation",
     category: "Water Heaters",
     image: "/images/gallery/waterheater3.jpg",
     description:

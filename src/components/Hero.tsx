@@ -9,11 +9,11 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/gallery/waterheater1.jpg')",
+          backgroundImage: "url('/images/gallery/bathtub.jpg')",
         }}
       />
 
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/40" />
 
       <div className="container relative z-10 grid items-center gap-16 pt-32 lg:grid-cols-[1.05fr_0.95fr]">
@@ -36,10 +36,9 @@ export default function Hero() {
 
 <div className="gold-line" />
 
-<p className="mt-6 max-w-2xl text-lg text-white/80">
-  Onyx Ridge provides dependable plumbing services across the
-  Dallas–Fort Worth area, specializing in water heaters, slab leaks,
-  sewer repairs, gas testing, and kitchen and bath remodel plumbing.
+<p className="mt-6 max-w-xl text-lg text-white/80">
+  DFW plumbing services for water heaters, slab leaks, sewer repairs,
+  gas testing, and kitchen or bath remodel work.
 </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
