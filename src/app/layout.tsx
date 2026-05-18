@@ -79,7 +79,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/og-image.png",
+        url: "https://onyxridge.net/onyxridge-share.jpg",
         width: 1200,
         height: 630,
         alt: "Onyx Ridge Building Solutions - DFW Plumbing Services",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     description:
       "Water heaters, slab leak repair, sewer repairs, gas testing, kitchen plumbing, bathroom plumbing, remodel plumbing, and new construction plumbing across Dallas–Fort Worth.",
 
-    images: ["/og-image.png"],
+    images: ["https://onyxridge.net/onyxridge-share.jpg"],
   },
 
   robots: {
