@@ -18,8 +18,9 @@ export default function Guarantees() {
                 At Onyx Ridge, we believe good plumbing work comes down to
                 showing up, communicating clearly, protecting the health and
                 safety of the community, and doing the job right the first time.
-                Whether it’s a water heater replacement, sewer repair, slab
-                leak, or remodel plumbing project, our goal is to provide
+                Whether it’s drain cleaning, a water heater replacement, sewer or
+                water line repair, slab leak, gas piping, remodel plumbing, or
+                new construction plumbing, our goal is to provide
                 dependable service and quality work people can feel confident
                 in.
               </p>
@@ -44,8 +45,8 @@ export default function Guarantees() {
 
                 <p className="mt-3">
                   Built around the services people search for most: water
-                  heaters, slab leaks, sewer repairs, gas testing, and remodel
-                  plumbing.
+                  heaters, slab leaks, sewer and water line repairs, gas piping,
+                  remodel plumbing, and new construction plumbing.
                 </p>
               </div>
             </ScrollReveal>

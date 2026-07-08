@@ -1,44 +1,51 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { business } from "@/data/business";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://onyxridge.net"),
+  metadataBase: new URL(business.url),
 
   title: {
     default:
-      "Onyx Ridge Building Solutions | Plumbing Services in Dallas–Fort Worth, TX",
+      "Onyx Ridge Building Solutions | DFW Plumber & Plumbing Services",
     template: "%s | Onyx Ridge Building Solutions",
   },
 
   description:
-    "Onyx Ridge Building Solutions provides professional plumbing services across the Dallas–Fort Worth area, including water heaters, slab leak repair, sewer repairs, gas testing, kitchen plumbing, bathroom plumbing, remodel plumbing, and new construction plumbing.",
+    "Onyx Ridge Building Solutions is a local DFW plumber serving homeowners and businesses with drain cleaning, water heaters, sewer and water line repairs, gas piping, slab leaks, remodel plumbing, and new construction plumbing.",
 
   keywords: [
     "Onyx Ridge Building Solutions",
+    "Onyx Ridge Builders",
     "Onyx Ridge plumbing",
     "Onyx Ridge Building Solutions DFW",
     "DFW plumber",
     "Dallas plumber",
     "Fort Worth plumber",
+    "Granbury plumber",
+    "Mansfield plumber",
     "Dallas Fort Worth plumber",
     "plumber Dallas TX",
     "plumber Fort Worth TX",
+    "plumber Granbury TX",
+    "plumber Mansfield TX",
     "plumbing services DFW",
     "plumbing services Dallas",
     "plumbing services Fort Worth",
     "residential plumber DFW",
-    "residential plumbing Dallas",
-    "residential plumbing Fort Worth",
-    "local plumber DFW",
+    "commercial plumber DFW",
     "licensed plumber DFW",
+    "Master Plumber DFW",
+    "drain cleaning DFW",
     "water heater installation DFW",
     "water heater replacement DFW",
     "water heater repair DFW",
     "slab leak repair DFW",
-    "slab leak detection DFW",
     "sewer repair DFW",
     "sewer line repair DFW",
+    "water line repair DFW",
+    "gas piping DFW",
     "gas testing DFW",
     "gas line testing DFW",
     "kitchen plumbing DFW",
@@ -47,11 +54,8 @@ export const metadata: Metadata = {
     "new construction plumbing DFW",
     "plumbing contractor DFW",
     "Dallas-Fort Worth plumbing",
-    "Dallas plumbing contractor",
-    "Fort Worth plumbing contractor",
-    "DFW plumbing contractor",
     "Texas plumbing contractor",
-    "RMP-46760",
+    business.license,
   ],
 
   verification: {
@@ -64,22 +68,16 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Onyx Ridge Building Solutions | Plumbing Services in Dallas–Fort Worth, TX",
-
+      "Onyx Ridge Building Solutions | DFW Plumber & Plumbing Services",
     description:
-      "Professional plumbing services across Dallas–Fort Worth including water heaters, slab leaks, sewer repairs, gas testing, kitchen plumbing, bathroom plumbing, remodel plumbing, and new construction plumbing.",
-
-    url: "https://onyxridge.net",
-
-    siteName: "Onyx Ridge Building Solutions",
-
+      "Local DFW plumber for drain cleaning, water heaters, sewer and water line repairs, gas piping, slab leaks, remodels, and new construction plumbing.",
+    url: business.url,
+    siteName: business.name,
     locale: "en_US",
-
     type: "website",
-
     images: [
       {
-        url: "https://onyxridge.net/onyxridge-share.jpg",
+        url: `${business.url}${business.shareImage}`,
         width: 1200,
         height: 630,
         alt: "Onyx Ridge Building Solutions - DFW Plumbing Services",
@@ -89,20 +87,15 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-
-    title:
-      "Onyx Ridge Building Solutions | DFW Plumbing Services",
-
+    title: "Onyx Ridge Building Solutions | DFW Plumbing Services",
     description:
-      "Water heaters, slab leak repair, sewer repairs, gas testing, kitchen plumbing, bathroom plumbing, remodel plumbing, and new construction plumbing across Dallas–Fort Worth.",
-
-    images: ["https://onyxridge.net/onyxridge-share.jpg"],
+      "Drain cleaning, water heaters, slab leak repair, sewer and water line repairs, gas piping, remodel plumbing, and new construction plumbing across DFW.",
+    images: [`${business.url}${business.shareImage}`],
   },
 
   robots: {
     index: true,
     follow: true,
-
     googleBot: {
       index: true,
       follow: true,

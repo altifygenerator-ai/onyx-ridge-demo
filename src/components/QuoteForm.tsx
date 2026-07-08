@@ -83,13 +83,19 @@ export default function QuoteForm() {
         <option value="" disabled>
           Service Needed
         </option>
+        <option value="Drain Cleaning">Drain Cleaning</option>
         <option value="Water Heaters">Water Heaters</option>
+        <option value="Sewer & Water Line Repairs">
+          Sewer & Water Line Repairs
+        </option>
         <option value="Slab Leaks">Slab Leaks</option>
-        <option value="Sewer Repairs">Sewer Repairs</option>
-        <option value="Gas Testing">Gas Testing</option>
+        <option value="Gas Piping & Testing">Gas Piping & Testing</option>
         <option value="Kitchen Plumbing">Kitchen Plumbing</option>
         <option value="Bathroom Remodel Plumbing">
           Bathroom Remodel Plumbing
+        </option>
+        <option value="New Construction Plumbing">
+          New Construction Plumbing
         </option>
         <option value="Other Plumbing Work">Other Plumbing Work</option>
       </select>

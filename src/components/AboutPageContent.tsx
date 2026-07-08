@@ -9,11 +9,12 @@ const values = [
 ];
 
 const services = [
+  "Drain Cleaning",
   "Water Heaters",
-  "Sewer Repairs",
+  "Sewer & Water Line Repairs",
+  "Gas Piping & Testing",
   "Slab Leaks",
-  "Gas Testing",
-  "Kitchen & Bath Remodels",
+  "Remodel & New Construction Plumbing",
 ];
 
 export default function AboutPageContent() {
@@ -33,10 +34,10 @@ export default function AboutPageContent() {
 
               <p className="mt-6 text-[var(--muted)]">
                 At Onyx Ridge Building Solutions, we bring craftsmanship,
-                reliability, and respect to every job. Whether it’s a water heater,
-                sewer repair, slab leak, gas test, remodel, or smaller plumbing
-                job, the goal is simple: do the work right and keep the process
-                clear from start to finish.
+                reliability, and respect to every job. Whether it’s drain cleaning, a water heater, sewer or water line
+                repair, slab leak, gas piping, remodel, new construction
+                plumbing, or a smaller plumbing job, the goal is simple: do the
+                work right and keep the process clear from start to finish.
               </p>
 
               <p className="mt-4 text-[var(--muted)]">
@@ -137,10 +138,10 @@ export default function AboutPageContent() {
                 <p className="mt-6 text-[var(--muted)]">
                   Onyx Ridge was built around the idea that customers deserve
                   clear communication, dependable work, and a company that takes
-                  pride in the finished result. From water heaters and slab
-                  leaks to sewer repairs and remodel plumbing, the focus is
-                  always on doing the job right and treating people with respect
-                  throughout the process.
+                  pride in the finished result. From drain cleaning, water heaters, and slab leaks to sewer and
+                  water line repairs, gas piping, remodel plumbing, and new
+                  construction plumbing, the focus is always on doing the job
+                  right and treating people with respect throughout the process.
                 </p>
               </div>
             </div>

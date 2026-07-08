@@ -1,25 +1,38 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import PageHero from "@/components/PageHero";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import { promotions } from "@/data/promotions";
 import PromotionsSchema from "@/components/PromotionsSchema";
-export const metadata = {
+import { business } from "@/data/business";
+
+export const metadata: Metadata = {
   title: "Plumbing Specials & Coupons DFW | Onyx Ridge",
   description:
-    "View current plumbing specials, coupons, and promotions from Onyx Ridge for water heaters, plumbing repairs, sewer repairs, slab leaks, gas testing, and remodel plumbing across Dallas–Fort Worth.",
+    "View current plumbing specials, coupons, and promotions from Onyx Ridge for water heaters, plumbing repairs, sewer and water line repairs, slab leaks, gas piping, and remodel plumbing across Dallas–Fort Worth.",
+  alternates: {
+    canonical: "/promotions",
+  },
+  openGraph: {
+    title: "Plumbing Specials & Coupons DFW | Onyx Ridge",
+    description:
+      "Current plumbing specials and free estimate offers from Onyx Ridge Building Solutions across DFW.",
+    url: `${business.url}/promotions`,
+    images: [business.shareImage],
+  },
 };
 
 export default function PromotionsPage() {
   return (
     <main>
-  <PromotionsSchema />
+      <PromotionsSchema />
       <Header />
 
       <PageHero
         eyebrow="Plumbing Specials & Coupons"
         title="Current Plumbing Promotions Across DFW"
-        description="View current offers from Onyx Ridge for plumbing repairs, water heaters, sewer repairs, slab leaks, gas testing, and remodel plumbing across the Dallas–Fort Worth area."
+        description="View current offers from Onyx Ridge for plumbing repairs, water heaters, sewer and water line repairs, slab leaks, gas piping, and remodel plumbing across the Dallas–Fort Worth area."
       />
 
       <section className="section">
@@ -31,9 +44,7 @@ export default function PromotionsPage() {
                   {promo.highlight}
                 </span>
 
-                <h2 className="mt-4 text-2xl text-white">
-                  {promo.title}
-                </h2>
+                <h2 className="mt-4 text-2xl text-white">{promo.title}</h2>
 
                 <p className="mt-4 text-[var(--muted)]">
                   {promo.description}
@@ -43,8 +54,8 @@ export default function PromotionsPage() {
                   {promo.expires}
                 </p>
 
-                <a href="tel:8179482020" className="btn btn-gold mt-6">
-                  Call/Text 817-948-2020
+                <a href={business.phoneHref} className="btn btn-gold mt-6">
+                  Call/Text {business.phone}
                 </a>
               </div>
             ))}
@@ -64,9 +75,9 @@ export default function PromotionsPage() {
 
           <p className="mt-6 max-w-3xl text-[var(--muted)]">
             Onyx Ridge provides plumbing specials and seasonal promotions for
-            homeowners needing water heater replacement, sewer repair, slab leak
-            service, gas testing, kitchen plumbing, bathroom plumbing, and
-            remodel plumbing across the DFW area.
+            homeowners needing water heater replacement, sewer repair, water
+            line repair, slab leak service, gas piping, kitchen plumbing,
+            bathroom plumbing, and remodel plumbing across the DFW area.
           </p>
         </div>
       </section>

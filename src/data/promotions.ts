@@ -3,7 +3,7 @@ export const promotions = [
     title: "Free Plumbing Estimates",
     highlight: "Free Estimate",
     description:
-      "Get a free estimate for plumbing repairs, water heater installs, sewer repairs, slab leaks, gas testing, and remodel plumbing across the DFW area.",
+      "Get a free estimate for drain cleaning, water heater installs, sewer and water line repairs, slab leaks, gas piping, and remodel plumbing across the DFW area.",
     expires: "Ongoing",
   },
   {
@@ -17,7 +17,7 @@ export const promotions = [
     title: "Kitchen & Bath Remodel Plumbing",
     highlight: "Project Pricing Available",
     description:
-      "Planning a kitchen or bathroom remodel? Ask about plumbing support for remodel projects, fixture updates, drain work, and water line changes.",
+      "Planning a kitchen or bathroom remodel? Ask about plumbing support for remodel projects, fixture updates, drain work, gas piping, and water line changes.",
     expires: "Ongoing",
   },
 ];

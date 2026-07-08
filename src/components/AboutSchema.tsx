@@ -1,18 +1,58 @@
+import { allDayOpeningHours, business } from "@/data/business";
+
 export default function AboutSchema() {
+  const plumberId = `${business.url}/#plumber`;
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Plumber",
-    name: "Onyx Ridge Building Solutions",
-    url: "https://onyxridge.net/about",
-    telephone: "817-948-2020",
-    areaServed: [
-      "Dallas-Fort Worth",
-      "Fort Worth TX",
-      "Dallas TX",
-      "North Texas",
+    "@graph": [
+      {
+        "@type": "Plumber",
+        "@id": plumberId,
+        name: business.name,
+        alternateName: business.alternateName,
+        url: business.url,
+        telephone: business.phone,
+        email: business.email,
+        priceRange: business.priceRange,
+        description: business.description,
+        hasMap: business.googleProfileUrl,
+        openingHours: "Mo-Su 00:00-23:59",
+        openingHoursSpecification: allDayOpeningHours,
+        areaServed: business.areaServed,
+        identifier: {
+          "@type": "PropertyValue",
+          name: "Texas Plumbing License",
+          value: business.license,
+        },
+      },
+      {
+        "@type": "AboutPage",
+        "@id": `${business.url}/about#webpage`,
+        url: `${business.url}/about`,
+        name: `About ${business.name}`,
+        description: business.description,
+        about: {
+          "@id": plumberId,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: business.url,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "About",
+            item: `${business.url}/about`,
+          },
+        ],
+      },
     ],
-    description:
-      "Onyx Ridge Building Solutions provides plumbing services across the Dallas-Fort Worth area including water heaters, sewer repairs, slab leaks, gas testing, and kitchen and bath remodels.",
   };
 
   return (

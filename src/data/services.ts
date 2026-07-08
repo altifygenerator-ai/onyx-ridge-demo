@@ -1,12 +1,30 @@
 export const services = [
   {
+    title: "Drain Cleaning",
+    slug: "drain-cleaning",
+    image: "/images/gallery/undersink2.jpg",
+    description:
+      "Drain cleaning and plumbing service for slow drains, sink backups, and clogged residential lines across the DFW area.",
+    details:
+      "Onyx Ridge helps homeowners troubleshoot drain issues, explain the options clearly, and get the plumbing flowing again without the runaround.",
+  },
+  {
     title: "Water Heaters",
     slug: "water-heaters",
     image: "/images/gallery/waterheater1.jpg",
     description:
       "Water heater repair, replacement, and installation for homeowners across the Dallas–Fort Worth area.",
     details:
-      "Onyx Ridge handles standard water heater replacements, garage installs, closet installs, and service work with clean connections and reliable setup.",
+      "Onyx Ridge handles standard water heater replacements, garage installs, closet installs, tankless water heater work, and service with clean connections and reliable setup.",
+  },
+  {
+    title: "Sewer & Water Line Repairs",
+    slug: "sewer-water-line-repairs",
+    image: "/images/gallery/inground.jpg",
+    description:
+      "Sewer line repair, water line repair, and underground plumbing work for backups, leaks, damaged lines, and failing service lines.",
+    details:
+      "Sewer and water line issues can get messy fast. Onyx Ridge focuses on finding the issue, explaining the work, and getting the plumbing back in shape.",
   },
   {
     title: "Slab Leaks",
@@ -18,22 +36,13 @@ export const services = [
       "From leak concerns to underground pipe repairs, Onyx Ridge focuses on finding the issue, explaining the work, and getting the plumbing back in shape.",
   },
   {
-    title: "Sewer Repairs",
-    slug: "sewer-repairs",
-    image: "/images/gallery/inground.jpg",
+    title: "Gas Piping & Testing",
+    slug: "gas-piping-testing",
+    image: "/images/gallery/outerpipe.jpg",
     description:
-      "Sewer line repair and service work for backups, damaged lines, and underground plumbing problems.",
+      "Gas piping, gas line testing, and plumbing service work focused on safety, function, and reliable connections.",
     details:
-      "Sewer issues can get messy fast. Onyx Ridge provides straightforward repair work for sewer lines, underground plumbing, and drainage-related problems.",
-  },
-  {
-    title: "Gas Testing",
-    slug: "gas-testing",
-    image: "/images/gallery/waterheater4.jpg",
-    description:
-      "Gas testing and plumbing service work focused on safety, function, and reliable connections.",
-    details:
-      "Gas work needs to be handled carefully. Onyx Ridge provides gas testing and related plumbing support for residential projects across DFW.",
+      "Gas work needs to be handled carefully. Onyx Ridge provides gas piping and testing support for residential projects across DFW.",
   },
   {
     title: "Kitchen Plumbing",
@@ -52,5 +61,14 @@ export const services = [
       "Bathroom plumbing for remodels, tubs, showers, toilets, fixtures, and finish work.",
     details:
       "Onyx Ridge supports bathroom remodel projects with plumbing rough-ins, tub and shower work, toilet installs, fixture updates, and finish plumbing.",
+  },
+  {
+    title: "New Construction Plumbing",
+    slug: "new-construction-plumbing",
+    image: "/images/gallery/waterheaterjoists.jpg",
+    description:
+      "New construction plumbing support for residential projects, remodel builds, rough-ins, and finish plumbing across the DFW area.",
+    details:
+      "Onyx Ridge helps with project plumbing that needs clean layout, reliable connections, and a plumber who communicates through the build process.",
   },
 ];

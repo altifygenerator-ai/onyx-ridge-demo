@@ -1,48 +1,60 @@
+import { business } from "@/data/business";
+import { promotions } from "@/data/promotions";
+
 export default function PromotionsSchema() {
+  const plumberId = `${business.url}/#plumber`;
   const schema = {
     "@context": "https://schema.org",
-
     "@graph": [
       {
-        "@type": "LocalBusiness",
-
-        name: "Onyx Ridge Building Solutions",
-
-        url: "https://onyxridge.net/promotions",
-
-        telephone: "817-948-2020",
-
-        areaServed: [
-          "Dallas-Fort Worth",
-          "Fort Worth TX",
-          "Dallas TX",
+        "@type": "Plumber",
+        "@id": plumberId,
+        name: business.name,
+        url: `${business.url}/promotions`,
+        telephone: business.phone,
+        areaServed: business.areaServed,
+        description: business.shortDescription,
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${business.url}/promotions#webpage`,
+        url: `${business.url}/promotions`,
+        name: `Plumbing Specials DFW | ${business.name}`,
+        about: {
+          "@id": plumberId,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: business.url,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Promotions",
+            item: `${business.url}/promotions`,
+          },
         ],
-
-        description:
-          "Onyx Ridge provides plumbing services and plumbing specials across the Dallas–Fort Worth area including water heaters, sewer repairs, slab leaks, gas testing, and remodel plumbing.",
       },
-
-      {
+      ...promotions.map((promo) => ({
         "@type": "Offer",
-
-        name: "Free Plumbing Estimates",
-
-        description:
-          "Free plumbing estimates for water heaters, sewer repairs, slab leaks, and remodel plumbing across DFW.",
-
+        name: promo.title,
+        description: promo.description,
         availability: "https://schema.org/InStock",
-      },
-
-      {
-        "@type": "Offer",
-
-        name: "Water Heater Installation Specials",
-
-        description:
-          "Seasonal plumbing specials and water heater installation offers in Dallas–Fort Worth.",
-
-        availability: "https://schema.org/InStock",
-      },
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          priceCurrency: "USD",
+          description: promo.highlight,
+        },
+        offeredBy: {
+          "@id": plumberId,
+        },
+      })),
     ],
   };
 

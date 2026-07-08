@@ -110,14 +110,15 @@ export default function ServicesPageContent() {
 
           <p className="mt-6 max-w-3xl text-[var(--muted)]">
             Onyx Ridge provides plumbing services across the Dallas–Fort Worth
-            area for homeowners needing water heater repair or installation,
-            slab leak work, sewer repairs, gas testing, kitchen plumbing,
-            bathroom plumbing, and remodel plumbing support.
+            area for homeowners needing drain cleaning, water heater repair or
+            installation, slab leak work, sewer and water line repairs, gas
+            piping, kitchen plumbing, bathroom plumbing, remodel plumbing, and
+            new construction plumbing support.
           </p>
 
           <p className="mt-4 max-w-3xl text-[var(--muted)]">
             Whether the job is a small fixture update, an under-sink plumbing
-            repair, a water heater replacement, or underground plumbing work,
+            repair, a water heater replacement, gas piping, or underground plumbing work,
             the goal is to keep the process clear, the work clean, and the
             finished result dependable.
           </p>

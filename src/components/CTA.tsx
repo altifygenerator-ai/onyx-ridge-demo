@@ -17,9 +17,10 @@ export default function CTA() {
             <div className="gold-line" />
 
             <p className="mt-6 max-w-xl text-[var(--muted)]">
-              Onyx Ridge provides water heater installs, slab leak repairs,
-              sewer repairs, gas testing, kitchen plumbing, bathroom plumbing,
-              and remodel plumbing across the Dallas–Fort Worth area.
+              Onyx Ridge provides drain cleaning, water heater installs, slab leak
+              repairs, sewer and water line repairs, gas piping, kitchen
+              plumbing, bathroom plumbing, remodel plumbing, and new
+              construction plumbing across the Dallas–Fort Worth area.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -38,7 +39,7 @@ export default function CTA() {
             <div className="mt-10 grid gap-3 text-sm text-white/70">
               <span>✔ Free Estimates</span>
               <span>✔ DFW Service Area</span>
-              <span>✔ Residential Plumbing Services</span>
+              <span>✔ Residential & Small Commercial Plumbing</span>
             </div>
           </div>
 

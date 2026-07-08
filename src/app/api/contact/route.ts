@@ -1,13 +1,19 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const clientEmail = "jake_shockley@outlook.com";
 const yourEmail = "altifygenerator@gmail.com";
 
 export async function POST(req: Request) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        { error: "Email service is not configured." },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await req.json();
 
     const { name, phone, email, service, message } = body;
@@ -35,7 +41,7 @@ export async function POST(req: Request) {
 
     await Promise.all([
       resend.emails.send({
-        from: "Onyx Ridge Website <leads@hometownwebservicesar.cc>",
+        from: "Onyx Ridge Website <leads@hometownwebservicesar.com>",
         to: [clientEmail],
         replyTo: email || undefined,
         subject: `New Onyx Ridge Lead - ${service || "General Inquiry"}`,
@@ -43,7 +49,7 @@ export async function POST(req: Request) {
       }),
 
       resend.emails.send({
-        from: "Onyx Ridge Website <leads@hometownwebservicesar.cc>",
+        from: "Onyx Ridge Website <leads@hometownwebservicesar.com>",
         to: [yourEmail],
         replyTo: email || undefined,
         subject: `Copy: New Onyx Ridge Lead - ${service || "General Inquiry"}`,

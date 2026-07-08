@@ -15,6 +15,10 @@ const items = [
     text: "Licensed & Insured",
   },
   {
+    icon: FaWrench,
+    text: "Drain Cleaning",
+  },
+  {
     icon: FaFire,
     text: "Water Heater Installation",
   },
@@ -24,11 +28,11 @@ const items = [
   },
   {
     icon: FaWrench,
-    text: "Sewer Repairs",
+    text: "Sewer & Water Line Repairs",
   },
   {
     icon: FaBath,
-    text: "Kitchen & Bath Remodels",
+    text: "Gas Piping & Remodel Plumbing",
   },
   {
     icon: FaShieldAlt,

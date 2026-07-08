@@ -17,8 +17,8 @@ export default function PromoStrip() {
             </span>
 
             <p className="mt-2 text-xl font-black leading-tight text-white">
-              Plumbing specials available for water heaters, repairs, sewer
-              work, and remodel plumbing across DFW.
+              Plumbing specials available for water heaters, repairs, sewer and
+              water line work, gas piping, and remodel plumbing across DFW.
             </p>
           </div>
 

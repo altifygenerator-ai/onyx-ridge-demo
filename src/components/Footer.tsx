@@ -20,8 +20,9 @@ export default function Footer() {
 
             <p className="mt-4 max-w-md text-sm leading-relaxed text-[var(--muted)]">
               Plumbing services across the Dallas–Fort Worth area including
-              water heaters, slab leaks, sewer repairs, gas testing, kitchen
-              plumbing, bathroom plumbing, and remodel plumbing.
+              drain cleaning, water heaters, slab leaks, sewer and water line
+              repairs, gas piping, kitchen plumbing, bathroom plumbing, remodel
+              plumbing, and new construction plumbing.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -34,7 +35,7 @@ export default function Footer() {
               </span>
 
               <span className="rounded-full border border-[var(--border)] bg-white/[0.03] px-3 py-1 text-xs font-bold text-white/75">
-                Residential Plumbing
+                Residential & Small Commercial
               </span>
             </div>
           </div>
@@ -50,6 +51,10 @@ export default function Footer() {
 
               <Link href="/gallery" className="transition hover:text-white">
                 Gallery
+              </Link>
+
+              <Link href="/reviews" className="transition hover:text-white">
+                Reviews
               </Link>
 
               <Link href="/promotions" className="transition hover:text-white">
@@ -83,6 +88,15 @@ export default function Footer() {
               </a>
 
               <span>Dallas–Fort Worth Area</span>
+
+              <a
+                href="https://share.google/lHkqmRbKPNtC3A0y0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-white"
+              >
+                Google Reviews
+              </a>
             </div>
           </div>
 
@@ -129,7 +143,7 @@ export default function Footer() {
             </p>
 
             <a
-              href="https://hometownwebservicesar.cc"
+              href="https://hometownwebservicesar.com"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-white md:whitespace-nowrap"

@@ -37,8 +37,9 @@ export default function Hero() {
           <div className="gold-line" />
 
           <p className="mt-6 max-w-xl text-lg text-white/80">
-            DFW plumbing services for water heaters, slab leaks, sewer repairs,
-            gas testing, and kitchen or bath remodel work.
+            DFW plumbing services for drain cleaning, water heaters, slab leaks,
+            sewer and water line repairs, gas piping, remodels, and new
+            construction plumbing.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -52,7 +53,7 @@ export default function Hero() {
           </div>
 
           <div className="mt-10 flex flex-wrap gap-3">
-            {["Water Heaters", "Slab Leaks", "Sewer Repairs", "Gas Testing"].map(
+            {["Drain Cleaning", "Water Heaters", "Slab Leaks", "Gas Piping"].map(
               (item) => (
                 <span
                   key={item}
