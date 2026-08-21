@@ -8,16 +8,16 @@ import PromotionsSchema from "@/components/PromotionsSchema";
 import { business } from "@/data/business";
 
 export const metadata: Metadata = {
-  title: "Plumbing Specials & Coupons DFW | Onyx Ridge",
+  title: "DFW Plumbing Specials",
   description:
-    "View current plumbing specials, coupons, and promotions from Onyx Ridge for water heaters, plumbing repairs, sewer and water line repairs, slab leaks, gas piping, and remodel plumbing across Dallas–Fort Worth.",
+    "See current Onyx Ridge plumbing specials and coupons for water heaters, repairs, sewer and water lines, slab leaks, gas piping, and remodel plumbing in DFW.",
   alternates: {
     canonical: "/promotions",
   },
   openGraph: {
-    title: "Plumbing Specials & Coupons DFW | Onyx Ridge",
+    title: "DFW Plumbing Specials | Onyx Ridge",
     description:
-      "Current plumbing specials and free estimate offers from Onyx Ridge Building Solutions across DFW.",
+      "Current plumbing specials and offers from Onyx Ridge Building Solutions across DFW.",
     url: `${business.url}/promotions`,
     images: [business.shareImage],
   },

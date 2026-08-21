@@ -8,16 +8,16 @@ import ReviewsSchema from "@/components/ReviewsSchema";
 import { business } from "@/data/business";
 
 export const metadata: Metadata = {
-  title: "Google Reviews | Onyx Ridge Building Solutions DFW Plumber",
+  title: "DFW Plumbing Reviews",
   description:
-    "Read Google reviews and customer feedback for Onyx Ridge Building Solutions, a 5.0-rated DFW plumber serving homeowners and businesses with water heaters, sewer and water line repairs, slab leaks, gas piping, and remodel plumbing.",
+    "Read customer reviews for Onyx Ridge Building Solutions, a 5-star DFW plumbing company serving homeowners and businesses across Dallas-Fort Worth.",
   alternates: {
     canonical: "/reviews",
   },
   openGraph: {
-    title: "Google Reviews | Onyx Ridge Building Solutions DFW Plumber",
+    title: "DFW Plumbing Reviews | Onyx Ridge",
     description:
-      "See Google reviews and customer feedback for Onyx Ridge Building Solutions.",
+      "Read customer reviews and feedback for Onyx Ridge Building Solutions.",
     url: `${business.url}/reviews`,
     images: [business.shareImage],
   },

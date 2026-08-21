@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { business } from "@/data/business";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -16,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://onyxridge.net/sitemap.xml",
+    sitemap: `${business.url}/sitemap.xml`,
   };
 }

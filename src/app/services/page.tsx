@@ -9,16 +9,16 @@ import ServicesSchema from "@/components/ServicesSchema";
 import { business } from "@/data/business";
 
 export const metadata: Metadata = {
-  title: "Plumbing Services DFW | Onyx Ridge Building Solutions",
+  title: "DFW Plumbing Services",
   description:
-    "Onyx Ridge provides plumbing services across Dallas-Fort Worth including drain cleaning, water heaters, sewer and water line repairs, gas piping, slab leaks, kitchen plumbing, bathroom remodel plumbing, and new construction plumbing.",
+    "DFW plumbing services for drain cleaning, water heaters, sewer and water line repair, gas piping, slab leaks, remodel plumbing, and new construction.",
   alternates: {
     canonical: "/services",
   },
   openGraph: {
-    title: "Plumbing Services DFW | Onyx Ridge Building Solutions",
+    title: "DFW Plumbing Services | Onyx Ridge",
     description:
-      "Drain cleaning, water heaters, sewer and water line repairs, gas piping, slab leaks, remodel plumbing, and new construction plumbing across DFW.",
+      "Drain cleaning, water heaters, sewer and water line repair, gas piping, slab leaks, remodels, and new construction across DFW.",
     url: `${business.url}/services`,
     images: [business.shareImage],
   },

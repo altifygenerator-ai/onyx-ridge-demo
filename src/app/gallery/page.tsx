@@ -8,16 +8,16 @@ import GallerySchema from "@/components/GallerySchema";
 import { business } from "@/data/business";
 
 export const metadata: Metadata = {
-  title: "Plumbing Work Gallery DFW | Onyx Ridge Building Solutions",
+  title: "DFW Plumbing Work Gallery",
   description:
-    "View recent plumbing work from Onyx Ridge Building Solutions including water heaters, under-sink plumbing, sewer and water line repairs, slab leak work, gas piping, bathroom plumbing, kitchen plumbing, and remodel plumbing across DFW.",
+    "See recent DFW plumbing work from Onyx Ridge, including water heaters, sewer and water lines, under-sink plumbing, gas piping, bathrooms, and remodels.",
   alternates: {
     canonical: "/gallery",
   },
   openGraph: {
-    title: "Plumbing Work Gallery DFW | Onyx Ridge Building Solutions",
+    title: "DFW Plumbing Work Gallery | Onyx Ridge",
     description:
-      "Real DFW plumbing work photos from Onyx Ridge Building Solutions.",
+      "See recent plumbing work completed by Onyx Ridge Building Solutions across DFW.",
     url: `${business.url}/gallery`,
     images: [business.shareImage],
   },

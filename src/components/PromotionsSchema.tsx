@@ -10,7 +10,7 @@ export default function PromotionsSchema() {
         "@type": "Plumber",
         "@id": plumberId,
         name: business.name,
-        url: `${business.url}/promotions`,
+        url: business.url,
         telephone: business.phone,
         areaServed: business.areaServed,
         description: business.shortDescription,

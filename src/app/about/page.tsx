@@ -8,16 +8,16 @@ import AboutSchema from "@/components/AboutSchema";
 import { business } from "@/data/business";
 
 export const metadata: Metadata = {
-  title: "About Onyx Ridge Building Solutions | DFW Plumber",
+  title: "About Our DFW Plumbing Team",
   description:
-    "Learn about Onyx Ridge Building Solutions, a local family owned DFW plumbing company led by a licensed Master Plumber and focused on clear communication, quality work, and dependable service.",
+    "Meet Onyx Ridge Building Solutions, a family-owned DFW plumbing company led by a licensed Master Plumber and focused on reliable, quality work.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
-    title: "About Onyx Ridge Building Solutions | DFW Plumber",
+    title: "About Onyx Ridge | DFW Plumbing",
     description:
-      "A local DFW plumbing company for drain cleaning, water heaters, sewer and water line repairs, gas piping, slab leaks, remodels, and new construction plumbing.",
+      "Meet the family-owned DFW plumbing company behind Onyx Ridge Building Solutions.",
     url: `${business.url}/about`,
     images: [business.shareImage],
   },
